@@ -21,6 +21,7 @@ services:
       - '443:443'
     volumes:
       - '/database/phpbb_data:/bitnami'
+      - '/database/themes/prosilver_se:/opt/bitnami/phpbb/styles/prosilver_se'
     depends_on:
       - mariadb
 volumes:
